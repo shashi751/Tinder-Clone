@@ -10,6 +10,7 @@ import SwiftUI
 struct CardView: View {
     
     //MARK: - Varaibles
+    @EnvironmentObject var matchManager: MatchManager
     @ObservedObject var viewModel : CardViewModel
     @State private var xOffSet : CGFloat = 0
     @State private var degree : CGFloat = 0
@@ -39,7 +40,7 @@ struct CardView: View {
             
         }
         .fullScreenCover(isPresented: $showProfileView, content: {
-            Text("Profile View")
+            UserProfileView(user: user)
         })
         .onReceive(viewModel.$buttonSwipeAction, perform: { action in
             onReceiveSwipeAction(action)

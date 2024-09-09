@@ -10,7 +10,7 @@ import Foundation
 struct MocData{
     
     static let users = [User(id: UUID().uuidString,
-                             name: "Shahsi",
+                             name: "Shahsi Gupta",
                              age: 30,
                              summary: "Senior Software Engineer at Cornerstone onDemand",
                              imageUrls: ["dev2", "dev1", "dev3"]),

@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var matchManager = MatchManager()
+    
     var body: some View {
         MainTabView()
+            .environmentObject(matchManager)
     }
 }
 

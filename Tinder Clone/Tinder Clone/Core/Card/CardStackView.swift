@@ -10,25 +10,30 @@ import SwiftUI
 struct CardStackView: View {
     
     @StateObject var viewModel = CardViewModel(service: NetworkService())
-    
+    @State var matchManager = MatchManager()
+    @State private var showMatchView = false
     var body: some View {
         
         NavigationStack{
             
-            VStack(spacing: 25) {
-                ZStack{
+            ZStack{
+                
+                VStack(spacing: 25) {
+                    ZStack{
+                        ForEach(viewModel.cards, id: \.id){ card in
+                            CardView(viewModel: viewModel, card: card)
+                        }
+                    }
                     
-                    ForEach(viewModel.cards, id: \.id){ card in
-                        
-                        CardView(viewModel: viewModel, card: card)
-                        
+                    if !viewModel.cards.isEmpty{
+                        SwipeActionButtonView(viewModel: viewModel)
                     }
                 }
+                .blur(radius: showMatchView ? 20 : 0)
                 
-                if !viewModel.cards.isEmpty{
-                    SwipeActionButtonView(viewModel: viewModel)
+                if showMatchView{
+                    MatchView(show: $showMatchView, user: MocData.users[0])
                 }
-                
             }
             .toolbar{
                 
@@ -39,7 +44,7 @@ struct CardStackView: View {
                         .frame(height: 30)
                 }
             }
-
+            
         }
     }
 }

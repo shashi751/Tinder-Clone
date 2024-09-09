@@ -26,6 +26,9 @@
 		D7357EA52C8EE2A6000950EE /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EA42C8EE2A6000950EE /* CardImageIndicatorView.swift */; };
 		D7357EA82C8EFE1A000950EE /* SwipeActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EA72C8EFE1A000950EE /* SwipeActionButtonView.swift */; };
 		D7357EAA2C8F02AF000950EE /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EA92C8F02AF000950EE /* SwipeAction.swift */; };
+		D7357EAC2C8F0E67000950EE /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EAB2C8F0E67000950EE /* UserProfileView.swift */; };
+		D7357EAF2C8F4B8E000950EE /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EAE2C8F4B8E000950EE /* MatchView.swift */; };
+		D7357EB12C8F52B0000950EE /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7357EB02C8F52B0000950EE /* MatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		D7357EA42C8EE2A6000950EE /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
 		D7357EA72C8EFE1A000950EE /* SwipeActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonView.swift; sourceTree = "<group>"; };
 		D7357EA92C8F02AF000950EE /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
+		D7357EAB2C8F0E67000950EE /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		D7357EAE2C8F4B8E000950EE /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		D7357EB02C8F52B0000950EE /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				D7357E9B2C8EE0C8000950EE /* Card */,
+				D7357EAD2C8F4B78000950EE /* Matches */,
 				D7357E9F2C8EE0F7000950EE /* Messages */,
 				D7357EA02C8EE0FC000950EE /* Profile */,
 				D7357E9E2C8EE0E5000950EE /* Search */,
@@ -227,6 +234,7 @@
 		D7357EA02C8EE0FC000950EE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D7357EAB2C8F0E67000950EE /* UserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -246,6 +254,15 @@
 				D7357E8D2C8EDD75000950EE /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D7357EAD2C8F4B78000950EE /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				D7357EAE2C8F4B8E000950EE /* MatchView.swift */,
+				D7357EB02C8F52B0000950EE /* MatchManager.swift */,
+			);
+			path = Matches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7357E912C8EDDED000950EE /* NetworkService.swift in Sources */,
+				D7357EAC2C8F0E67000950EE /* UserProfileView.swift in Sources */,
 				D7357E972C8EDF54000950EE /* MocData.swift in Sources */,
 				D7357E892C8ECC38000950EE /* ImageScrollingOverlay.swift in Sources */,
 				D7357EA82C8EFE1A000950EE /* SwipeActionButtonView.swift in Sources */,
@@ -330,10 +348,12 @@
 				D7357E8B2C8EDCF6000950EE /* CardStackView.swift in Sources */,
 				D7357E662C8EAA8D000950EE /* ContentView.swift in Sources */,
 				D7357E802C8EB2E3000950EE /* CardView.swift in Sources */,
+				D7357EB12C8F52B0000950EE /* MatchManager.swift in Sources */,
 				D7357E872C8ECB43000950EE /* SizeConstants.swift in Sources */,
 				D7357E932C8EDDFC000950EE /* CardViewModel.swift in Sources */,
 				D7357E642C8EAA8D000950EE /* Tinder_CloneApp.swift in Sources */,
 				D7357E8E2C8EDD75000950EE /* User.swift in Sources */,
+				D7357EAF2C8F4B8E000950EE /* MatchView.swift in Sources */,
 				D7357E822C8EB7C0000950EE /* UserInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
