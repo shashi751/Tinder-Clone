@@ -11,6 +11,7 @@ import Foundation
 class CardViewModel:ObservableObject{
     
     @Published var cards = [CardModel]()
+    @Published var buttonSwipeAction : SwipeAction?
     
     let service : NetworkServiceProtocol
     

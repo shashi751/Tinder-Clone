@@ -14,6 +14,7 @@ struct CardView: View {
     @State private var xOffSet : CGFloat = 0
     @State private var degree : CGFloat = 0
     @State private var currentIndex  = 0
+    @State private var showProfileView  = false
     
     var card : CardModel
     
@@ -23,6 +24,7 @@ struct CardView: View {
                 Image(user.imageUrls[currentIndex])
                     .resizable()
                     .scaledToFill()
+                    .background(Color.gray)
                     .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
                     .overlay{
                         ImageScrollingOverlay(currentIndex: $currentIndex, imageCount: imagesCount)
@@ -32,10 +34,16 @@ struct CardView: View {
                 
                 CardImageIndicatorView(currentIndex: currentIndex, imageCount: imagesCount)
             }
-                
-            UserInfoView(user: user)
-                
+            
+            UserInfoView(showProfileView: $showProfileView, user: user)
+            
         }
+        .fullScreenCover(isPresented: $showProfileView, content: {
+            Text("Profile View")
+        })
+        .onReceive(viewModel.$buttonSwipeAction, perform: { action in
+            onReceiveSwipeAction(action)
+        })
         .frame(width: SizeConstants.cardWidth, height: SizeConstants.cardHeight)
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffSet)
@@ -67,7 +75,7 @@ private extension CardView{
         } completion: {
             viewModel.removeCard(card: card)
         }
-
+        
     }
     
     func swipeLeft(){
@@ -85,6 +93,23 @@ private extension CardView{
     func returnToCenter(){
         xOffSet = 0
         degree = 0
+    }
+    
+    func onReceiveSwipeAction(_ action: SwipeAction?){
+        guard let action = action else {return}
+        
+        let topCard = viewModel.cards.last
+        
+        if topCard == card{
+            
+            switch action{
+                case .like:
+                    swipeRight()
+                    
+                case .reject:
+                    swipeLeft()
+            }
+        }
     }
 }
 

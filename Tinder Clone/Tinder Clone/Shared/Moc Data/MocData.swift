@@ -13,11 +13,26 @@ struct MocData{
                              name: "Shahsi",
                              age: 30,
                              summary: "Senior Software Engineer at Cornerstone onDemand",
-                             imageUrls: ["dev2", "dev2", "dev3"]),
+                             imageUrls: ["dev2", "dev1", "dev3"]),
                         User(id: UUID().uuidString,
                              name: "Vishal",
                              age: 28,
                              summary: "Android Developer at Pairroxz Technology",
-                             imageUrls: ["dev4", "dev1"])]
+                             imageUrls: ["dev4", "dev1", "dev2"]),
+                        User(id: UUID().uuidString,
+                             name: "Himanshu",
+                             age: 30,
+                             summary: "UI/UX Designer at Pairroxz Technology",
+                             imageUrls: ["dev1", "dev3", "dev2"]),
+                        User(id: UUID().uuidString,
+                             name: "Vibha",
+                             age: 30,
+                             summary: "Business Development Manager at Pairroxz Technology",
+                             imageUrls: ["dev4", "dev2", "dev1"]),
+                        User(id: UUID().uuidString,
+                             name: "Akansha",
+                             age: 28,
+                             summary: "BUsiness Development Executive at Pairroxz Technology",
+                             imageUrls: ["dev2", "dev4", "dev3"])]
     
 }

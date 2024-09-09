@@ -13,14 +13,34 @@ struct CardStackView: View {
     
     var body: some View {
         
-        ZStack{
+        NavigationStack{
             
-            ForEach(viewModel.cards, id: \.id){ card in
+            VStack(spacing: 25) {
+                ZStack{
+                    
+                    ForEach(viewModel.cards, id: \.id){ card in
+                        
+                        CardView(viewModel: viewModel, card: card)
+                        
+                    }
+                }
                 
-                CardView(viewModel: viewModel, card: card)
+                if !viewModel.cards.isEmpty{
+                    SwipeActionButtonView(viewModel: viewModel)
+                }
+                
             }
-        }
+            .toolbar{
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    Image(.logo)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 30)
+                }
+            }
 
+        }
     }
 }
 
