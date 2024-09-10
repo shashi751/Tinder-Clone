@@ -25,6 +25,11 @@ The drag gesture captures the swipe direction and translates it into an offset, 
 Rotation is calculated based on the swipe drag, enhancing the visual effect.
 Once the user swipes a card far enough, it either dismisses to the left or right with smooth animations.
 
+**Video**
+
+https://github.com/user-attachments/assets/7d8fac82-0db6-4537-b111-c29c908cf005
+
+
 
 **Screenshots:**
 ![simulator_screenshot_6B5506FA-CA40-4828-A23B-2E7B6CF95D91](https://github.com/user-attachments/assets/5c833303-7f06-4331-9b55-84ae1957dce1)
