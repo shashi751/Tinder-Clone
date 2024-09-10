@@ -30,17 +30,13 @@ Once the user swipes a card far enough, it either dismisses to the left or right
 https://github.com/user-attachments/assets/7d8fac82-0db6-4537-b111-c29c908cf005
 
 
-
 **Screenshots:**
-![simulator_screenshot_6B5506FA-CA40-4828-A23B-2E7B6CF95D91](https://github.com/user-attachments/assets/5c833303-7f06-4331-9b55-84ae1957dce1)
 
-![simulator_screenshot_F481E65E-89A5-4FAC-913C-1DE9F40F68B7](https://github.com/user-attachments/assets/10d1d770-ba88-4c10-9625-171c6325e0e2)
-
-![simulator_screenshot_DA272508-93BB-45A6-82A4-43B2C5F4EC3F](https://github.com/user-attachments/assets/759912f6-35d4-474c-9e50-57f32c2ad26c)
-
-![simulator_screenshot_791F6759-DFC6-4510-B6EA-B3E9A62A6FC0](https://github.com/user-attachments/assets/545de950-a318-4fff-803b-b089c72f4f36)
-
-![simulator_screenshot_39B99E02-0388-4563-95E8-DF12BE5BA18B](https://github.com/user-attachments/assets/2df6413b-651a-4957-abc6-bc670ccdfa49)
+![366023456-2df6413b-651a-4957-abc6-bc670ccdfa49](https://github.com/user-attachments/assets/3591ab4c-c1ba-4283-832f-615aab7fe775)
+![366023441-545de950-a318-4fff-803b-b089c72f4f36](https://github.com/user-attachments/assets/c691e93b-1866-459e-b7ff-f886f356d319)
+![366023283-759912f6-35d4-474c-9e50-57f32c2ad26c](https://github.com/user-attachments/assets/f8988373-49ee-4a9f-adb2-b3d7805d8e3f)
+![366023209-10d1d770-ba88-4c10-9625-171c6325e0e2](https://github.com/user-attachments/assets/a5898d51-4458-4b61-a57a-6b4bb935366c)
+![366023164-5c833303-7f06-4331-9b55-84ae1957dce1](https://github.com/user-attachments/assets/f9419ad6-9ed6-4ae8-8c26-994d36f07890)
 
 
 **Demo:**
