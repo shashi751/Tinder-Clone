@@ -30,7 +30,7 @@ iOS 17 SDK
 Installation
 Clone the Repository:
 
-git clone https://github.com/yourusername/ZTInder.git
+git clone [https://github.com/yourusername/ZTInder.git](https://github.com/shashi751/Tinder-Clone.git)
 
 **Open the Project:**
 Launch Xcode and select File > Open. Navigate to the cloned repository and open it.
